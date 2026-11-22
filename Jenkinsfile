@@ -31,7 +31,7 @@ pipeline {
 			}
 			stage('Sistema disponible') {
 				steps {
-					sh'curl-feS http://nginx/salud'
+					sh 'curl -feS http://nginx/salud'
 				}
 			}
 		}
