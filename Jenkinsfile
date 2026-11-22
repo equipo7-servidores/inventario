@@ -20,7 +20,7 @@ pipeline {
 					sh 'grep -Eq "^ +nginx:" compose.yaml'
 					sh 'grep -Eq "^ +app:" compose.yaml'
 					sh 'grep -Eq "^ +db:" compose.yaml'
-					sh 'grep -q"healthchek:" compose.yaml'
+					sh 'grep -Eq "^ +healthcheck:" compose.yaml'
 					sh 'grep -q "image: .*/inventario-app:1.0" compose.yaml'
 					}
 				}
