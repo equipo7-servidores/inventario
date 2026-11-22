@@ -12,7 +12,7 @@ pipeline {
 			stage('Credenciales protegidas') {
 				steps {
 					sh 'grep -qx ".env" .gitignore'
-					sh 'test ! -f .env
+					sh 'test ! -f .env'
 				}
 			}
 			stage('Estructura de compose') {
